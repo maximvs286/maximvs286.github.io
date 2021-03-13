@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЖК &laquo;Лунное море&raquo; — maximvs286</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="flex-container align-flex-center top-nav">
+        <div class="flex-container w30 align-flex-center">
+            <img class="padding-left-right-20" src="images/logo.svg" height="40" alt="logo">
+            <p>Лунное море</p>
+        </div>
+        <nav class="w70">
+            <ul class="list-style-none flex-container justify-end">
+                <li class="padding-right-20"><a href="#advantages">Преимущества</a></li>
+                <li class="padding-right-20"><a href="#about">О ЖК</a></li>
+                <li class="padding-right-20"><a href="#places">Места для отдыха</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="margin-for-nav">
+        <div class="banner flex-container justify-center align-flex-center">
+            <div class="text-center inverse-text-color">
+                <img src="images/logo.svg" alt="logo" width="140">
+                <h1>ЖК «Лунное море»</h1>
+                <p>Место, откуда не хочется улетать</p>
+                <a href="#order"class="button button-white size75">Забронировать</a>
+            </div>
+        </div>
+        <section id="advantages" class="flex-container justify-center p60 top-shift">
+            <div class="flex-container w1000 justify-space-between wrap">
+                <div class="w30 min-width-300">
+                    <h2>Уникальный вид</h2>
+                    <p>Вид на космос из вашего окна. Мы построили дома с&nbsp;большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+                </div>
+                <div class="w30 min-width-300">
+                    <h2>Инфраструктура</h2>
+                    <p>Прекрасные дороги рядом с&nbsp;домом. Много мест для прогулки. Всего в&nbsp;200&nbsp;км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+                </div>
+                <div class="w30 min-width-300">
+                    <h2>Близость к Москве</h2>
+                    <p>При небольшой цене мы располагаемся близко к&nbsp;МКАД. Всего 384&nbsp;000&nbsp;километров и&nbsp;вы в&nbsp;самом сердце России.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="flex-container justify-center p60 moon-dust-color top-shift">
+            <div class="flex-container w1000 justify-space-between wrap">
+                <div class="w50 min-width-300">
+                    <h2 class="margin-top-0">О ЖК «Лунное море»</h2>
+                    <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к&nbsp;тому же связь с&nbsp;мегаполисом не теряется&nbsp;– современные скоростные трассы позволяют без труда добираться до столицы и&nbsp;обратно.</p>
+                    <p>Мы построили наши дома на самом близком к&nbsp;Солнцу спутнике, всего в&nbsp;380&nbsp;тысяч&nbsp;километров от Земли.</p>
+                </div>
+                <div>
+                    <img src="images/moon-1.jpg" alt="moon1" width="350">
+                </div>
+            </div>
+        </section>
+        <section id="places" class="flex-container p60 justify-center top-shift">
+            <div class="flex-container w1000 justify-space-between wrap-reverse">
+                <div class="wrap">
+                    <img src="images/moon-2.jpg" alt="moon2" width="350">
+                </div>
+                <div class="w50 min-width-300">
+                    <h2 class="margin-top-0">Места для отдыха</h2>
+                    <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В&nbsp;вашем распоряжении 22&nbsp;моря и 18&nbsp;гор. Самое ближайшее кольцо гор всего в&nbsp;200&nbsp;километров от вашей квартиры.</p>
+                    <p>Дома располагаются в&nbsp;новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+                </div>
+            </div>
+        </section>
+        <div id="order" class="flex-container moon-dust-color justify-center p60 top-shift">
+            <div>
+                <h2 class="text-center margin-top-0">Оставьте заявку сегодня!</h2>
+                <form class="order-form">
+                    <fieldset>
+                        <legend class="accent-color">Параметры квартиры</legend>
+                        <div>
+                            <label for="rooms">Количество комнат: </label>
+                            <select id="rooms">
+                                <option disabled>Выбрать количество комнат</option>
+                                <option value="1">1</option>
+                                <option value="3">3</option>
+                                <option value="all">весь модуль</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="style">Отделка: </label>
+                            <select id="style">
+                                <option disabled>Выбрать отделку</option>
+                                <option value="rough">без отделки</option>
+                                <option value="fine">с отделкой</option>
+                                <option value="lunar">луноремонт</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="accent-color">Контактная информация</legend>
+                        <div>
+                            <label for="name">Имя: </label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="phone">Телефон: </label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div>
+                            <label for="e-mail">E-mail: </label>
+                            <input type="email" id="e-mail">
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="button button-green">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer flex-container space-color inverse-text-color justify-space-between">
+        <div>
+            <div class="flex-container align-flex-center">
+                <img class="padding-right-20" src="images/logo.svg" height="35" alt="logo">
+                <p class="bolder">Лунное море</p>
+            </div>
+            <p>&copy; 2032 год</p>
+        </div>
+        <div>
+            <h4>Проектная документация</h4>
+            <ul>
+                <li><a>Скачать</a></li>
+                <li><a>Посмотреть на сайте</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>О застройщике</h4>
+            <ul>
+                <li><a>Отзывы</a></li>
+                <li><a>Сайт компании</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
